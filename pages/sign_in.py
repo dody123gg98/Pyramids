@@ -16,8 +16,15 @@ if st.button("Login", type="primary", use_container_width=True):
             st.session_state.user_name = user["username"]
             st.session_state.email = user["email"]
             st.session_state.phone = user["phone"]
+            # Load profile picture or use default
+            if "profile_picture" in user and user["profile_picture"]:
+                st.session_state.image_path = user["profile_picture"]
+            else:
+                st.session_state.image_path = "images/profilepicture.jpeg"
+
             st.success("Welcome back, " + user["username"] + "!")
             found = True
+            st.session_state.is_signed_in = True
             st.switch_page("pages/profile.py")
             break
 
@@ -34,4 +41,4 @@ with col1:
 
 with col2:
     if st.button("Sign Up →", use_container_width=True):
-        st.switch_page("pages/signup.py")
+        st.switch_page("pages/sign_up.py")

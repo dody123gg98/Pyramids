@@ -2,6 +2,7 @@ users_accounts = [
     {
         "username": "SHALENGER",
         "email": "adhamibrahim20202024@gmail.com",
+        "profile_picture": "",
         "password": "A-D-H-A-M321",
         "birthday": "26/10/2012",
         "gender": "male",
@@ -74,9 +75,8 @@ courts_details = [
         "dimension": "50 x 25",
         "sport": "Football",
         "club": "El-Itihad",
-        "price": "150/1h",
+        "price": 150,
         "type": "indoor",
-        "amenities": ["Parking", "Changing Rooms", "Showers", "Cafeteria"],
     },
     # Basketball Courts
     {
@@ -87,9 +87,8 @@ courts_details = [
         "dimension": "25 x 12.5",
         "sport": "basketball",
         "club": "EL-47",
-        "price": "175/1h",
+        "price": 175,
         "type": "outdoor",
-        "amenities": ["Parking", "Water Fountain", "Benches", "Lighting"],
     },
     # Padel Courts
     {
@@ -100,9 +99,8 @@ courts_details = [
         "dimension": "25 x 15",
         "sport": "Padel",
         "club": "El-Ikhlas",
-        "price": "200/1h",
+        "price": 200,
         "type": "outdoor",
-        "amenities": ["Parking", "Showers", "Equipment Rental", "WiFi"],
     },
     # Tennis Courts
     {
@@ -113,15 +111,8 @@ courts_details = [
         "dimension": "40 x 25",
         "sport": "tennis",
         "club": "EL-Zikra",
-        "price": "250/1h",
+        "price": 250,
         "type": "outdoor",
-        "amenities": [
-            "Parking",
-            "Changing Rooms",
-            "Equipment Rental",
-            "Cafeteria",
-            "WiFi",
-        ],
     },
     # Volleyball Courts
     {
@@ -132,9 +123,8 @@ courts_details = [
         "dimension": "50 x 20",
         "sport": "volleyball",
         "club": "El-Shehada",
-        "price": "200/1h",
+        "price": 200,
         "type": "outdoor",
-        "amenities": ["Parking", "Showers", "Benches", "Lighting"],
     },
     # Handball Courts
     {
@@ -145,9 +135,8 @@ courts_details = [
         "dimension": "50 x 25",
         "sport": "Handball",
         "club": "El-shark",
-        "price": "125/1h",
+        "price": 125,
         "type": "indoor",
-        "amenities": ["Parking", "Changing Rooms", "Showers", "First Aid"],
     },
     # Additional Football Courts
     {
@@ -158,15 +147,8 @@ courts_details = [
         "dimension": "60 x 30",
         "sport": "Football",
         "club": "El-Nasr",
-        "price": "200/1h",
+        "price": 200,
         "type": "outdoor",
-        "amenities": [
-            "Parking",
-            "Changing Rooms",
-            "Showers",
-            "Cafeteria",
-            "Seating Area",
-        ],
     },
     {
         "name": "Sporting Club",
@@ -176,15 +158,8 @@ courts_details = [
         "dimension": "55 x 27",
         "sport": "Football",
         "club": "Sporting",
-        "price": "175/1h",
+        "price": 175,
         "type": "indoor",
-        "amenities": [
-            "Parking",
-            "Changing Rooms",
-            "Showers",
-            "WiFi",
-            "Air Conditioning",
-        ],
     },
     # Additional Basketball Courts
     {
@@ -195,9 +170,8 @@ courts_details = [
         "dimension": "28 x 15",
         "sport": "basketball",
         "club": "El-Ahly",
-        "price": "200/1h",
+        "price": 200,
         "type": "indoor",
-        "amenities": ["Parking", "Changing Rooms", "Showers", "Scoreboard", "WiFi"],
     },
     {
         "name": "Youth Center Court",
@@ -207,9 +181,8 @@ courts_details = [
         "dimension": "26 x 14",
         "sport": "basketball",
         "club": "Youth Center",
-        "price": "150/1h",
+        "price": 150,
         "type": "outdoor",
-        "amenities": ["Parking", "Water Fountain", "Benches"],
     },
     # Additional Padel Courts
     {
@@ -220,16 +193,8 @@ courts_details = [
         "dimension": "26 x 16",
         "sport": "Padel",
         "club": "Padel Pro",
-        "price": "220/1h",
+        "price": 220,
         "type": "indoor",
-        "amenities": [
-            "Parking",
-            "Changing Rooms",
-            "Showers",
-            "Equipment Rental",
-            "WiFi",
-            "Air Conditioning",
-        ],
     },
     {
         "name": "Elite Padel",
@@ -239,9 +204,8 @@ courts_details = [
         "dimension": "25 x 15",
         "sport": "Padel",
         "club": "Elite Sports",
-        "price": "190/1h",
+        "price": 190,
         "type": "outdoor",
-        "amenities": ["Parking", "Equipment Rental", "Cafeteria", "WiFi"],
     },
     # Additional Tennis Courts
     {
@@ -252,17 +216,8 @@ courts_details = [
         "dimension": "42 x 26",
         "sport": "tennis",
         "club": "Royal Club",
-        "price": "280/1h",
+        "price": 280,
         "type": "outdoor",
-        "amenities": [
-            "Parking",
-            "Changing Rooms",
-            "Showers",
-            "Equipment Rental",
-            "Cafeteria",
-            "WiFi",
-            "Pro Shop",
-        ],
     },
     {
         "name": "City Tennis Center",
@@ -272,16 +227,8 @@ courts_details = [
         "dimension": "38 x 24",
         "sport": "tennis",
         "club": "City Sports",
-        "price": "230/1h",
+        "price": 230,
         "type": "indoor",
-        "amenities": [
-            "Parking",
-            "Changing Rooms",
-            "Showers",
-            "Equipment Rental",
-            "WiFi",
-            "Air Conditioning",
-        ],
     },
     # Additional Volleyball Courts
     {
@@ -292,9 +239,8 @@ courts_details = [
         "dimension": "52 x 22",
         "sport": "volleyball",
         "club": "Beach Club",
-        "price": "220/1h",
+        "price": 220,
         "type": "outdoor",
-        "amenities": ["Parking", "Showers", "Benches", "Lighting", "Sand Court"],
     },
     {
         "name": "Olympic Volleyball",
@@ -304,16 +250,8 @@ courts_details = [
         "dimension": "54 x 24",
         "sport": "volleyball",
         "club": "Olympic Sports",
-        "price": "210/1h",
+        "price": 210,
         "type": "indoor",
-        "amenities": [
-            "Parking",
-            "Changing Rooms",
-            "Showers",
-            "Scoreboard",
-            "WiFi",
-            "Air Conditioning",
-        ],
     },
     # Additional Handball Courts
     {
@@ -324,9 +262,8 @@ courts_details = [
         "dimension": "52 x 26",
         "sport": "Handball",
         "club": "Champions Club",
-        "price": "150/1h",
+        "price": 150,
         "type": "indoor",
-        "amenities": ["Parking", "Changing Rooms", "Showers", "First Aid", "WiFi"],
     },
     {
         "name": "Sporting Handball Arena",
@@ -336,8 +273,7 @@ courts_details = [
         "dimension": "51 x 25",
         "sport": "Handball",
         "club": "Sporting",
-        "price": "140/1h",
+        "price": 140,
         "type": "outdoor",
-        "amenities": ["Parking", "Benches", "Lighting", "First Aid"],
     },
 ]

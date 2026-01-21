@@ -4,12 +4,21 @@ from data import courts_details
 
 st.set_page_config(page_title="Details", layout="wide")
 
+
+if "is_signed_in" not in st.session_state or st.session_state.is_signed_in == False:
+    st.session_state.is_signed_in = False
+    st.warning("Please sign in first.")
+    if st.button("Sign In", use_container_width=True):
+        st.switch_page("pages/sign_in.py")
+    st.stop()
+
 # Check if a court was selected
 if "selected_court_index" not in st.session_state:
     st.warning("Please select a court from the home page first.")
     if st.button("← Go to Home"):
         st.switch_page("pages/home.py")
     st.stop()
+
 
 court_index = st.session_state["selected_court_index"]
 court = courts_details[court_index]
@@ -42,12 +51,6 @@ with col3:
     st.write(court["club"])
     st.subheader("🏟️ Type")
     st.write(court["type"].capitalize())
-    st.subheader("✨ Amenities")
-    if "amenities" in court:
-        for amenity in court["amenities"]:
-            st.write(f"✓ {amenity}")
-    else:
-        st.write("Standard facilities")
 
 with col4:
     st.image(court["image 2"], width=700)
@@ -63,7 +66,4 @@ with c1:
 
 with c2:
     if st.button("Book Now", type="primary", use_container_width=True):
-        st.session_state["selected_sport"] = court["sport"]
-        st.session_state["selected_image"] = court["image 1"]
-        st.session_state["selected_court_name"] = court["name"]
         st.switch_page("pages/checkout.py")

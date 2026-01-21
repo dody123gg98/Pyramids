@@ -5,6 +5,14 @@ if "bookings" not in st.session_state:
     st.session_state.bookings = []
 
 
+if "is_signed_in" not in st.session_state or st.session_state.is_signed_in == False:
+    st.session_state.is_signed_in = False
+    st.warning("Please sign in first.")
+    if st.button("Sign In", use_container_width=True):
+        st.switch_page("pages/sign_in.py")
+    st.stop()
+
+
 if "user_name" not in st.session_state:
     st.session_state.user_name = "username"
 
@@ -20,18 +28,6 @@ if "image_path" not in st.session_state:
 st.set_page_config(page_title="Profile", layout="wide")
 
 st.sidebar.title("🏟️ Sports Gallery")
-
-if len(st.session_state.bookings) == 0:
-    st.sidebar.image(
-        "https://images.unsplash.com/photo-1599058917210-d3a5b414d9b4?fit=crop&w=300&q=80",
-        caption="Book your favorite sport",
-        width=200,
-    )
-    st.sidebar.image(
-        "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?fit=crop&w=300&q=80",
-        caption="Play, Have Fun!",
-        width=200,
-    )
 
 
 user_name = st.session_state.user_name

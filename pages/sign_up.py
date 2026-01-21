@@ -21,7 +21,7 @@ uploaded_file = st.file_uploader(
     "Upload your profile picture", type=["jpg", "jpeg", "png"]
 )
 
-if st.button("Submit ✅"):
+if st.button("Submit ✅", use_container_width=True):
     if uploaded_file:
         upload_dir = Path("uploads")
         upload_dir.mkdir(exist_ok=True)
@@ -47,7 +47,7 @@ if st.button("Submit ✅"):
             )
 
             time.sleep(3)
-            st.switch_page("pages/profile.py")
+            st.switch_page("pages/sign_in.py")
 
     else:
         st.error("Please fill in all fields❌❗")
