@@ -38,9 +38,16 @@ with col6:
     )
 
 
-if st.button("home", use_container_width=True):
-    st.switch_page("./pages/home.py")
+col_btn1, col_btn2, col_btn3 = st.columns(3)
 
+with col_btn1:
+    if st.button("🏠 Home", use_container_width=True):
+        st.switch_page("pages/home.py")
 
-if st.button("contact-us", use_container_width=True):
-    st.switch_page("./pages/contact_us.py")
+with col_btn2:
+    if st.button("🔐 Sign In", use_container_width=True):
+        st.switch_page("pages/sign_in.py")
+
+with col_btn3:
+    if st.button("📞 Contact Us", use_container_width=True):
+        st.info("Contact form coming soon!")

@@ -2,17 +2,7 @@ import streamlit as st
 
 
 if "bookings" not in st.session_state:
-    st.session_state.bookings = [
-        {
-            "stadium": "Stadium A",
-            "sport": "Football",
-            "image": "https://imgresizer.tntsports.io/unsafe/2560x1440/filters:format(jpeg)/origin-imgresizer.tntsports.io/2025/03/11/image-2c33751b-72bd-4b98-9cc2-8873bbd18247-85-2560-1440.jpeg",
-            "date": "2025-12-05",
-            "time": "18:00",
-            "duration": 2,
-            "price_per_hour": 50,
-        }
-    ]
+    st.session_state.bookings = []
 
 
 if "user_name" not in st.session_state:
@@ -88,3 +78,19 @@ else:
                 st.rerun()
         with c2:
             st.image(booking["image"])
+
+st.divider()
+
+col_nav1, col_nav2 = st.columns(2)
+
+with col_nav1:
+    if st.button("🏠 Back to Home", use_container_width=True):
+        st.switch_page("pages/home.py")
+
+with col_nav2:
+    if st.button("🚪 Sign Out", use_container_width=True):
+        # Clear user session data
+        for key in ["user_name", "email", "phone", "image_path", "bookings"]:
+            if key in st.session_state:
+                del st.session_state[key]
+        st.switch_page("pages/sign_in.py")
